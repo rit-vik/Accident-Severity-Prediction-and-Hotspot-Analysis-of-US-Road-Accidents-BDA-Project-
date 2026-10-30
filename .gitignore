@@ -1,0 +1,7 @@
+logs/
+__pycache__/
+*.ova
+*.pyc
+.env
+*.key
+data/

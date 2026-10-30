@@ -1,0 +1,13 @@
+feature,present,accidents,severe_pct
+Bump,0,7689366,19.5
+Bump,1,3478,9.7
+Crossing,0,6822591,21.1
+Crossing,1,870253,7.0
+Junction,0,7123558,18.9
+Junction,1,569286,26.8
+Railway,0,7626184,19.5
+Railway,1,66660,15.1
+Stop,0,7480237,19.9
+Stop,1,212607,6.2
+Traffic_Signal,0,6551704,21.2
+Traffic_Signal,1,1141140,9.5

@@ -1,0 +1,127 @@
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1793249876942
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793249550273_0002/
+	 user: hadoop
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 100.100.110.62
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1793249876942
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793249550273_0002/
+	 user: hadoop
+Columns: 46
+root
+ |-- ID: string (nullable = true)
+ |-- Source: string (nullable = true)
+ |-- Severity: integer (nullable = true)
+ |-- Start_Time: timestamp (nullable = true)
+ |-- End_Time: timestamp (nullable = true)
+ |-- Start_Lat: double (nullable = true)
+ |-- Start_Lng: double (nullable = true)
+ |-- End_Lat: double (nullable = true)
+ |-- End_Lng: double (nullable = true)
+ |-- Distance_mi: double (nullable = true)
+ |-- Description: string (nullable = true)
+ |-- Street: string (nullable = true)
+ |-- City: string (nullable = true)
+ |-- County: string (nullable = true)
+ |-- State: string (nullable = true)
+ |-- Zipcode: string (nullable = true)
+ |-- Country: string (nullable = true)
+ |-- Timezone: string (nullable = true)
+ |-- Airport_Code: string (nullable = true)
+ |-- Weather_Timestamp: timestamp (nullable = true)
+ |-- Temperature_F: double (nullable = true)
+ |-- Wind_Chill_F: double (nullable = true)
+ |-- Humidity: double (nullable = true)
+ |-- Pressure_in: double (nullable = true)
+ |-- Visibility_mi: double (nullable = true)
+ |-- Wind_Direction: string (nullable = true)
+ |-- Wind_Speed_mph: double (nullable = true)
+ |-- Precipitation_in: double (nullable = true)
+ |-- Weather_Condition: string (nullable = true)
+ |-- Amenity: boolean (nullable = true)
+ |-- Bump: boolean (nullable = true)
+ |-- Crossing: boolean (nullable = true)
+ |-- Give_Way: boolean (nullable = true)
+ |-- Junction: boolean (nullable = true)
+ |-- No_Exit: boolean (nullable = true)
+ |-- Railway: boolean (nullable = true)
+ |-- Roundabout: boolean (nullable = true)
+ |-- Station: boolean (nullable = true)
+ |-- Stop: boolean (nullable = true)
+ |-- Traffic_Calming: boolean (nullable = true)
+ |-- Traffic_Signal: boolean (nullable = true)
+ |-- Turning_Loop: boolean (nullable = true)
+ |-- Sunrise_Sunset: string (nullable = true)
+ |-- Civil_Twilight: string (nullable = true)
+ |-- Nautical_Twilight: string (nullable = true)
+ |-- Astronomical_Twilight: string (nullable = true)
+
+Severity distribution:
++--------+-------+
+|Severity|  count|
++--------+-------+
+|       1|  67366|
+|       2|6156981|
+|       3|1299337|
+|       4| 204710|
++--------+-------+
+
+Null counts per column:
+-RECORD 0------------------------
+ ID                    | 0       
+ Source                | 0       
+ Severity              | 0       
+ Start_Time            | 0       
+ End_Time              | 0       
+ Start_Lat             | 0       
+ Start_Lng             | 0       
+ End_Lat               | 3402762 
+ End_Lng               | 3402762 
+ Distance_mi           | 0       
+ Description           | 5       
+ Street                | 10869   
+ City                  | 253     
+ County                | 0       
+ State                 | 0       
+ Zipcode               | 1915    
+ Country               | 0       
+ Timezone              | 7808    
+ Airport_Code          | 22635   
+ Weather_Timestamp     | 120228  
+ Temperature_F         | 163853  
+ Wind_Chill_F          | 1999019 
+ Humidity              | 174144  
+ Pressure_in           | 140679  
+ Visibility_mi         | 177098  
+ Wind_Direction        | 175206  
+ Wind_Speed_mph        | 571233  
+ Precipitation_in      | 2203586 
+ Weather_Condition     | 173459  
+ Amenity               | 0       
+ Bump                  | 0       
+ Crossing              | 0       
+ Give_Way              | 0       
+ Junction              | 0       
+ No_Exit               | 0       
+ Railway               | 0       
+ Roundabout            | 0       
+ Station               | 0       
+ Stop                  | 0       
+ Traffic_Calming       | 0       
+ Traffic_Signal        | 0       
+ Turning_Loop          | 0       
+ Sunrise_Sunset        | 23246   
+ Civil_Twilight        | 23246   
+ Nautical_Twilight     | 23246   
+ Astronomical_Twilight | 23246   
+
+Rows written: 7728394

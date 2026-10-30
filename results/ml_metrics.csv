@@ -1,0 +1,4 @@
+model,accuracy,train_seconds,f1,weightedPrecision,weightedRecall,recall_sev1,recall_sev2,recall_sev3,recall_sev4
+baseline_majority,0.7972,,,,,,,,
+logistic_regression,0.3962,22.4,0.4906,0.7708,0.3962,0.793,0.381,0.431,0.526
+random_forest,0.361,81.5,0.4597,0.7719,0.361,0.891,0.347,0.385,0.472

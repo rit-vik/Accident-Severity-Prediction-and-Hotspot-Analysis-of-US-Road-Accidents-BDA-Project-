@@ -1,0 +1,124 @@
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1793250762648
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793249550273_0004/
+	 user: hadoop
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 100.100.110.62
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1793250762648
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793249550273_0004/
+	 user: hadoop
+
+== top_states
+State  accidents  severe_pct
+   CA    1739361        16.4
+   FL     876742        13.4
+   TX     582423        21.9
+   SC     382002        11.9
+   NY     347333        23.2
+   NC     337802        11.8
+   VA     303112        22.9
+   PA     296119        15.8
+   MN     191828        16.0
+   OR     175772         8.5
+
+== top_cities
+       City State  accidents  severe_pct
+      Miami    FL     185639         9.1
+    Houston    TX     169340        18.0
+Los Angeles    CA     156249        22.9
+  Charlotte    NC     138313         5.6
+     Dallas    TX     130228        26.2
+    Orlando    FL     109063         6.5
+     Austin    TX      96538         9.2
+    Raleigh    NC      86051         9.9
+  Nashville    TN      72641        15.1
+Baton Rouge    LA      70999         9.5
+
+== by_hour
+ hour  accidents  severe_pct
+    0     110142        15.9
+    1      96046        14.2
+    2      92285        15.8
+    3      82652        17.7
+    4     158704        21.5
+    5     226946        20.1
+    6     404496        20.1
+    7     586021        18.8
+    8     576037        19.0
+    9     361755        20.8
+   10     341490        20.2
+   11     353747        19.6
+   12     353395        19.5
+   13     394587        18.8
+   14     446988        18.2
+   15     523948        18.6
+   16     579876        19.4
+   17     573900        20.0
+   18     430434        21.3
+   19     293709        21.5
+   20     223941        21.5
+   21     190074        20.6
+   22     166275        20.1
+   23     125396        15.5
+
+== by_weekday
+ day_of_week  accidents  severe_pct
+           1     558763        22.4
+           2    1205842        19.3
+           3    1285601        19.0
+           4    1306830        18.9
+           5    1310531        19.0
+           6    1360797        19.2
+           7     664480        21.1
+
+== by_weather
+weather_group  accidents  severe_pct
+        Clear    3387379        16.9
+       Cloudy    3151719        21.7
+   Rain/Storm     598602        22.8
+     Fog/Haze     200361        16.1
+     Snow/Ice     178041        20.0
+      Unknown     172560        21.8
+        Other       4182        10.8
+
+== by_season
+season  accidents  severe_pct
+Winter    2245934        16.5
+Autumn    2076484        18.4
+Spring    1693042        21.3
+Summer    1677384        23.1
+
+== by_year
+ year  accidents  severe_pct
+ 2016     410621        34.2
+ 2017     717784        35.5
+ 2018     893061        35.6
+ 2019     953376        27.9
+ 2020    1171931        18.4
+ 2021    1550246        11.5
+ 2022    1750644         6.9
+ 2023     245181         2.8
+
+== infrastructure
+       feature  present  accidents  severe_pct
+          Bump        0    7689366        19.5
+          Bump        1       3478         9.7
+      Crossing        0    6822591        21.1
+      Crossing        1     870253         7.0
+      Junction        0    7123558        18.9
+      Junction        1     569286        26.8
+       Railway        0    7626184        19.5
+       Railway        1      66660        15.1
+          Stop        0    7480237        19.9
+          Stop        1     212607         6.2
+Traffic_Signal        0    6551704        21.2
+Traffic_Signal        1    1141140         9.5

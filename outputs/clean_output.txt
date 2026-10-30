@@ -1,0 +1,88 @@
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1793250465296
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793249550273_0003/
+	 user: hadoop
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 100.98.191.62
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1793250465296
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793249550273_0003/
+	 user: hadoop
+RAW ROWS: 7728394
+CLEAN ROWS: 7692844
+CLEAN COLUMNS: 44
++--------+-------+
+|Severity|  count|
++--------+-------+
+|       1|  67355|
+|       2|6125854|
+|       3|1298929|
+|       4| 200706|
++--------+-------+
+
++-------------+-------+
+|weather_group|  count|
++-------------+-------+
+|        Clear|3387379|
+|       Cloudy|3151719|
+|   Rain/Storm| 598602|
+|     Fog/Haze| 200361|
+|     Snow/Ice| 178041|
+|      Unknown| 172560|
+|        Other|   4182|
++-------------+-------+
+
+root
+ |-- ID: string (nullable = true)
+ |-- Severity: integer (nullable = true)
+ |-- Start_Time: timestamp (nullable = true)
+ |-- End_Time: timestamp (nullable = true)
+ |-- Start_Lat: double (nullable = true)
+ |-- Start_Lng: double (nullable = true)
+ |-- Distance_mi: double (nullable = true)
+ |-- City: string (nullable = true)
+ |-- County: string (nullable = true)
+ |-- State: string (nullable = true)
+ |-- Timezone: string (nullable = true)
+ |-- Temperature_F: double (nullable = true)
+ |-- Humidity: double (nullable = true)
+ |-- Pressure_in: double (nullable = true)
+ |-- Visibility_mi: double (nullable = true)
+ |-- Wind_Direction: string (nullable = true)
+ |-- Wind_Speed_mph: double (nullable = true)
+ |-- Precipitation_in: double (nullable = true)
+ |-- Weather_Condition: string (nullable = true)
+ |-- Amenity: integer (nullable = true)
+ |-- Bump: integer (nullable = true)
+ |-- Crossing: integer (nullable = true)
+ |-- Give_Way: integer (nullable = true)
+ |-- Junction: integer (nullable = true)
+ |-- No_Exit: integer (nullable = true)
+ |-- Railway: integer (nullable = true)
+ |-- Roundabout: integer (nullable = true)
+ |-- Station: integer (nullable = true)
+ |-- Stop: integer (nullable = true)
+ |-- Traffic_Calming: integer (nullable = true)
+ |-- Traffic_Signal: integer (nullable = true)
+ |-- Turning_Loop: integer (nullable = true)
+ |-- Sunrise_Sunset: string (nullable = true)
+ |-- Civil_Twilight: string (nullable = true)
+ |-- Nautical_Twilight: string (nullable = true)
+ |-- Astronomical_Twilight: string (nullable = true)
+ |-- hour: integer (nullable = true)
+ |-- day_of_week: integer (nullable = true)
+ |-- month: integer (nullable = true)
+ |-- year: integer (nullable = true)
+ |-- is_weekend: integer (nullable = true)
+ |-- season: string (nullable = true)
+ |-- duration_min: double (nullable = true)
+ |-- weather_group: string (nullable = true)
+

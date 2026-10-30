@@ -1,0 +1,75 @@
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1793251213242
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793249550273_0005/
+	 user: hadoop
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 100.100.110.62
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1793251213242
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793249550273_0005/
+	 user: hadoop
++- *(1) Filter UDF(Severity#1, rand(42))
+   +- *(1) ColumnarToRow
+      +- FileScan parquet [Severity#1,Start_Lat#4,Start_Lng#5,State#9,Temperature_F#11,Humidity#12,Pressure_in#13,Visibility_mi#14,Wind_Direction#15,Wind_Speed_mph#16,Precipitation_in#17,Amenity#19,Bump#20,Crossing#21,Give_Way#22,Junction#23,No_Exit#24,Railway#25,Roundabout#26,Station#27,Stop#28,Traffic_Calming#29,Traffic_Signal#30,Turning_Loop#31,... 7 more fields] Batched: true, DataFilters: [], Format: Parquet, Location: InMemoryFileIndex(1 paths)[hdfs://master:9000/user/hadoop/accidents_clean], PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Severity:int,Start_Lat:do... MapPartitionsRDD[6] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
++- *(1) Filter UDF(Severity#1, rand(42))
+   +- *(1) ColumnarToRow
+      +- FileScan parquet [Severity#1,Start_Lat#4,Start_Lng#5,State#9,Temperature_F#11,Humidity#12,Pressure_in#13,Visibility_mi#14,Wind_Direction#15,Wind_Speed_mph#16,Precipitation_in#17,Amenity#19,Bump#20,Crossing#21,Give_Way#22,Junction#23,No_Exit#24,Railway#25,Roundabout#26,Station#27,Stop#28,Traffic_Calming#29,Traffic_Signal#30,Turning_Loop#31,... 7 more fields] Batched: true, DataFilters: [], Format: Parquet, Location: InMemoryFileIndex(1 paths)[hdfs://master:9000/user/hadoop/accidents_clean], PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Severity:int,Start_Lat:do... MapPartitionsRDD[6] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+Sample rows: 1001088
+Class weights: {1.0: 0.3138475712549496, 0.0: 28.578145080679707, 3.0: 9.617143200384431, 2.0: 1.481992772672408}
++- Project [label#120, w#2025, UDF(struct(Start_Lat, Start_Lat#4, Start_Lng, Start_Lng#5, Temperature_F, Temperature_F#11, Humidity, Humidity#12, Pressure_in, Pressure_in#13, Visibility_mi, Visibility_mi#14, Wind_Speed_mph, Wind_Speed_mph#16, Precipitation_in, Precipitation_in#17, hour_double_VectorAssembler_89197a5a2852, cast(hour#36 as double), day_of_week_double_VectorAssembler_89197a5a2852, cast(day_of_week#37 as double), month_double_VectorAssembler_89197a5a2852, cast(month#38 as double), is_weekend_double_VectorAssembler_89197a5a2852, cast(is_weekend#40 as double), ... 36 more fields)) AS features#6705]
+   +- Project [Start_Lat#4, Start_Lng#5, Temperature_F#11, Humidity#12, Pressure_in#13, Visibility_mi#14, Wind_Speed_mph#16, Precipitation_in#17, hour#36, day_of_week#37, month#38, is_weekend#40, Amenity#19, Bump#20, Crossing#21, Give_Way#22, Junction#23, No_Exit#24, Railway#25, Roundabout#26, Station#27, Stop#28, Traffic_Calming#29, Traffic_Signal#30, ... 8 more fi... MapPartitionsRDD[73] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
++- Project [label#120, w#2025, UDF(struct(Start_Lat, Start_Lat#4, Start_Lng, Start_Lng#5, Temperature_F, Temperature_F#11, Humidity, Humidity#12, Pressure_in, Pressure_in#13, Visibility_mi, Visibility_mi#14, Wind_Speed_mph, Wind_Speed_mph#16, Precipitation_in, Precipitation_in#17, hour_double_VectorAssembler_89197a5a2852, cast(hour#36 as double), day_of_week_double_VectorAssembler_89197a5a2852, cast(day_of_week#37 as double), month_double_VectorAssembler_89197a5a2852, cast(month#38 as double), is_weekend_double_VectorAssembler_89197a5a2852, cast(is_weekend#40 as double), ... 36 more fields)) AS features#6705]
+   +- Project [Start_Lat#4, Start_Lng#5, Temperature_F#11, Humidity#12, Pressure_in#13, Visibility_mi#14, Wind_Speed_mph#16, Precipitation_in#17, hour#36, day_of_week#37, month#38, is_weekend#40, Amenity#19, Bump#20, Crossing#21, Give_Way#22, Junction#23, No_Exit#24, Railway#25, Roundabout#26, Station#27, Stop#28, Traffic_Calming#29, Traffic_Signal#30, ... 8 more fi... MapPartitionsRDD[73] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
++- Project [label#120, UDF(struct(Start_Lat, Start_Lat#4, Start_Lng, Start_Lng#5, Temperature_F, Temperature_F#11, Humidity, Humidity#12, Pressure_in, Pressure_in#13, Visibility_mi, Visibility_mi#14, Wind_Speed_mph, Wind_Speed_mph#16, Precipitation_in, Precipitation_in#17, hour_double_VectorAssembler_89197a5a2852, cast(hour#36 as double), day_of_week_double_VectorAssembler_89197a5a2852, cast(day_of_week#37 as double), month_double_VectorAssembler_89197a5a2852, cast(month#38 as double), is_weekend_double_VectorAssembler_89197a5a2852, cast(is_weekend#40 as double), ... 36 more fields)) AS features#7573]
+   +- Project [Start_Lat#4, Start_Lng#5, Temperature_F#11, Humidity#12, Pressure_in#13, Visibility_mi#14, Wind_Speed_mph#16, Precipitation_in#17, hour#36, day_of_week#37, month#38, is_weekend#40, Amenity#19, Bump#20, Crossing#21, Give_Way#22, Junction#23, No_Exit#24, Railway#25, Roundabout#26, Station#27, Stop#28, Traffic_Calming#29, Traffic_Signal#30, ... 7 more fields]
+  ... MapPartitionsRDD[87] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
++- Project [label#120, UDF(struct(Start_Lat, Start_Lat#4, Start_Lng, Start_Lng#5, Temperature_F, Temperature_F#11, Humidity, Humidity#12, Pressure_in, Pressure_in#13, Visibility_mi, Visibility_mi#14, Wind_Speed_mph, Wind_Speed_mph#16, Precipitation_in, Precipitation_in#17, hour_double_VectorAssembler_89197a5a2852, cast(hour#36 as double), day_of_week_double_VectorAssembler_89197a5a2852, cast(day_of_week#37 as double), month_double_VectorAssembler_89197a5a2852, cast(month#38 as double), is_weekend_double_VectorAssembler_89197a5a2852, cast(is_weekend#40 as double), ... 36 more fields)) AS features#7573]
+   +- Project [Start_Lat#4, Start_Lng#5, Temperature_F#11, Humidity#12, Pressure_in#13, Visibility_mi#14, Wind_Speed_mph#16, Precipitation_in#17, hour#36, day_of_week#37, month#38, is_weekend#40, Amenity#19, Bump#20, Crossing#21, Give_Way#22, Junction#23, No_Exit#24, Railway#25, Roundabout#26, Station#27, Stop#28, Traffic_Calming#29, Traffic_Signal#30, ... 7 more fields]
+  ... MapPartitionsRDD[87] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+Train rows: 800531  Test rows: 200557
+
+Baseline (always predict the majority class) accuracy: 0.7972
+
+== logistic_regression {'model': 'logistic_regression', 'train_seconds': 22.4, 'accuracy': 0.3962, 'f1': 0.4906, 'weightedPrecision': 0.7708, 'weightedRecall': 0.3962}
+prediction    0.0    1.0    2.0    3.0
+Sev1         1306     78    135    127
+Sev2        34313  60846  30925  33795
+Sev3         5267   6083  14555   7880
+Sev4          790    705    993   2759
+Per-class recall: {'recall_sev1': 0.793, 'recall_sev2': 0.381, 'recall_sev3': 0.431, 'recall_sev4': 0.526}
+  total: 76.976041526
+  findBestSplits: 76.840859942
+  chooseSplits: 76.766218522
+
+== random_forest {'model': 'random_forest', 'train_seconds': 81.5, 'accuracy': 0.361, 'f1': 0.4597, 'weightedPrecision': 0.7719, 'weightedRecall': 0.361}
+prediction    0.0    1.0    2.0    3.0
+Sev1         1467     59     58     62
+Sev2        42918  55456  28738  32767
+Sev3         7903   5354  12998   7530
+Sev4         1166    616    986   2479
+Per-class recall: {'recall_sev1': 0.891, 'recall_sev2': 0.347, 'recall_sev3': 0.385, 'recall_sev4': 0.472}
+
+Top RF features:
+  month                               0.1371
+  Traffic_Signal                      0.1217
+  season_ohe_Winter                   0.1063
+  Crossing                            0.0629
+  Pressure_in                         0.0564
+  Start_Lng                           0.0472
+  hour                                0.0460
+  season_ohe_Summer                   0.0443
+  Start_Lat                           0.0401
+  Temperature_F                       0.0364
+  season_ohe_Autumn                   0.0326
+  season_ohe_Spring                   0.0311
+  State_ohe_CA                        0.0288
+  State_ohe_AZ                        0.0242
+  is_weekend                          0.0230
