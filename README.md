@@ -42,7 +42,7 @@ Identify spatial and temporal accident hotspots and the weather and road conditi
 | Source | https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents |
 | Records | 7,728,394 (7,692,844 after cleaning) |
 | Attributes | 46 (44 after cleaning and feature engineering) |
-| Format / size | CSV, about 3 GB; 732 MB as Parquet |
+| Format / size | CSV, about 2.8 GB; 732 MB as Parquet |
 | Coverage | Contiguous US, 2016 to March 2023 |
 | License | CC BY-NC-SA 4.0 (research use, attribution, non-commercial) |
 
@@ -186,14 +186,7 @@ Findings:
 Going from 1 to 2 executors (one per worker) cuts runtime by about 35%. A third executor is slower: with two 2-vCPU worker VMs, two executors share one VM, the job lasts only about 20 seconds so fixed overheads (scheduling, JVM start, shuffle over Tailscale) dominate, and the cluster is memory-bound (4 GB of container memory).
 `[TODO: state whether these runs used the worker2 VM on Laptop A or Dhruv's Laptop B]`
 
-### 8.4 Evidence (see `screenshots/`)
-
-`[TODO: add these files and keep the names]`
-
-- `hdfs_datanodes.png`, `hdfs_file_browser.png`, `hdfs_fsck.png`
-- `yarn_nodes.png`, `yarn_applications.png`
-- `spark_ui_jobs.png`, `spark_ui_stages.png`, `spark_ui_executors.png`, `spark_ui_sql.png`
-- `jps_master.png`, `jps_worker1.png`, `jps_worker2.png`, `dfsadmin_report.png`
+### 8.4 Evidence (all files in [`screenshots/`](screenshots/))
 
 ## 9. Limitations and future work
 
