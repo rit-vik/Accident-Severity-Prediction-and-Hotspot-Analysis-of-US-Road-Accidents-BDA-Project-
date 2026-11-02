@@ -95,6 +95,7 @@ Configuration files are in [`cluster/`](cluster/). YARN reports 8 vCores per nod
 ├── cluster/             Hadoop and Spark configuration files
 ├── results/             CSV outputs (tables, metrics, confusion matrices, scaling)
 ├── charts/              figures used in the report
+├── docs/                contains the report of the project
 ├── outputs/             console output of each job (INFO/WARN lines removed)
 └── screenshots/         HDFS UI, YARN UI, Spark UI, terminal evidence
 ```
@@ -184,7 +185,6 @@ Findings:
 | 3 | 23.4 | 23.1 | 23.1 | 1.24x |
 
 Going from 1 to 2 executors (one per worker) cuts runtime by about 35%. A third executor is slower: with two 2-vCPU worker VMs, two executors share one VM, the job lasts only about 20 seconds so fixed overheads (scheduling, JVM start, shuffle over Tailscale) dominate, and the cluster is memory-bound (4 GB of container memory).
-`[TODO: state whether these runs used the worker2 VM on Laptop A or Dhruv's Laptop B]`
 
 ### 8.4 Evidence (all files in [`screenshots/`](screenshots/))
 
@@ -199,13 +199,11 @@ Going from 1 to 2 executors (one per worker) cuts runtime by about 35%. A third 
 
 ## 10. Team contributions
 
-`[TODO: fill in; each member should be able to explain the whole pipeline in the viva]`
-
 | Member | Contribution |
 |---|---|
-| Ritvik Kar | `[e.g. cluster setup, Spark on YARN, ingestion and cleaning, scaling experiment]` |
-| Dhruv Abhijit Desai | `[e.g. worker2 node, Spark SQL exploration and hotspot analysis, charts]` |
-| Mithil S | `[e.g. MLlib models and evaluation, report sections]` |
+| Ritvik Kar | Cluster setup, Spark on YARN, ingestion and cleaning, scaling experiment |
+| Dhruv Abhijit Desai | Worker2 node, Spark SQL exploration and hotspot analysis, Charts |
+| Mithil S | MLlib models and evaluation, Report sections |
 
 ## 11. References and acknowledgements
 
@@ -216,4 +214,4 @@ Going from 1 to 2 executors (one per worker) cuts runtime by about 35%. A third 
 5. Apache Spark 3.5.1 documentation (Spark on YARN, SQL, MLlib): https://spark.apache.org/docs/3.5.1/
 6. Tailscale documentation: https://tailscale.com/kb
 
-Code is released under the MIT license (`[add a LICENSE file]`). The dataset keeps its original CC BY-NC-SA 4.0 license.
+Code is released under the MIT license. The dataset keeps its original CC BY-NC-SA 4.0 license.
